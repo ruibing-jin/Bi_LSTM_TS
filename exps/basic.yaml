@@ -1,0 +1,45 @@
+---
+gpu: '0'
+save_frequency: 1
+seed: 3000
+task: 't1'
+
+dist_backend: 'nccl'
+world_size: -1
+rank: -1
+dist_url: 'tcp://224.66.41.62:23456'
+multiprocessing_distributed: False
+distributed: False
+#dataset
+data:
+  root: './data'
+  set: 'FD001'
+  max_rul: 125
+  seq_len: 30 
+  num_worker: 4
+
+#network
+net:
+  name: 'bilstm'
+  hand_craft: False
+  input_dim: 14
+  aux_dim: 4
+  num_hidden: 18
+  hand_dim: 28
+
+#train
+train:
+  resume_epoch: 0
+  batch_size: 10
+  lr: 0.001
+  optimizer: 'adam'
+  lr_epoch: [1000]
+  lr_factor: 0.1
+  end_epoch: 50
+  callback_freq: 1000
+  warmup_iters: 0
+
+# test
+test:
+  model_name: '_'
+  model_path: '_'

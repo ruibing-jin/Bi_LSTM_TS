@@ -1,0 +1,12 @@
+pyyaml==5.4.1
+easydict
+opencv-python
+tqdm
+matplotlib
+imageio
+scipy
+decord
+ipdb
+pandas
+sklearn
+einops
