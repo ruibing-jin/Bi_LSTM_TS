@@ -10,7 +10,7 @@ In industry, prognostic health management (PHM) is used to improve the system re
 investigate how to combine both streams' feature representations in a reasonable way. 
 To verify our proposed Bi-LSTM based two-stream network, extensive experiments are carried out on the C-MAPSS dataset, showing superior performances over state-of-the-art approaches.
 
-<img src='bi-lstm_ts.png' width='1280' height='520'>
+<img src='bi-lstm_ts.png' width='1280' height='350'>
 
 ## Disclaimer
 This is an official PyTorch implementation of "[Bi-LSTM based Two-Stream Network for Machine Remaining Useful Life Prediction](https://ieeexplore.ieee.org/document/9758765)"
