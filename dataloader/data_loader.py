@@ -93,7 +93,7 @@ class CMPDataIter(data.IterableDataset):
 
         train_df['setting1'] = train_df['setting1'].round(1) 
 
-        if self.data_set == "FD002":
+        if self.data_set == "FD003" or self.data_set == "FD001":
             train_df['setting2'] = 0.0
         else:
             train_df['setting2'] = train_df['setting2'].round(3)
